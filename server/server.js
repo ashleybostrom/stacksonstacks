@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const db = require('./config/connection');
+const { expressMiddleware } = require('@apollo/server/express4');
 
 // import ApolloServer
 const { ApolloServer } = require('@apollo/server');

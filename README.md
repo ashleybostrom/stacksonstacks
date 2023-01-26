@@ -25,8 +25,7 @@ MERN application using GraphQL with Apollo Server and RESTful API for a book sea
 1. **Copy link in code dropdown menu:** Copy the link with SSH key to clone the repo
 1. **Clone:** In GitBash (Windows) or Terminal (Mac), type `git clone < $link >`
 1. **NPM:** From the root directory, type `npm init` to install NPM (Node Package Manager)
-1. **Dependencies:** To install all dependencies needed:
-* Type `npm i`
+1. **Dependencies:** To install all dependencies needed, type `npm i`
 1. **MongoDB:** To properly install the database, you must sign up or log in to MongoDB Atlas (https://www.mongodb.com/cloud/atlas/register) and create a cluster.
 
 ## Usage
