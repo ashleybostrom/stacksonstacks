@@ -28,7 +28,7 @@ MERN application using GraphQL with Apollo Server and RESTful API for a book sea
 1. **Dependencies:** To install all dependencies needed, type `npm install`
 
 ## Usage
-In your terminal, type `npm run develop` to run in development mode and view at (http://localhost:3001) to run app locally.
+In your terminal, type `npm run develop` to run in development mode and view at (http://localhost:3000) to run app locally.
 
 ## Testing
 To test the code for the app, test `npm test`
