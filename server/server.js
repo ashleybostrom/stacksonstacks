@@ -53,8 +53,8 @@ const PORT = process.env.PORT || 3001;
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  context: authMiddleware,
-  plugins: [loggingPlugin],
+  // context: authMiddleware,
+  // plugins: [loggingPlugin],
 });
 // integrate our Apollo server with the Express application as middleware
 const app = express();
@@ -64,7 +64,7 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
 } else {
   app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/public/index.html'));
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
   });
 }
 
@@ -81,9 +81,9 @@ app.use(
 );
 
 db.once('open', () => {
-  app.listen(PORT, () => console.log(`🌍 Now listening on localhost:${PORT}`));
+  app.listen(PORT, () => { console.log(`🌍 Now listening on localhost:${PORT}`);
+  });
 });
-
 };
 
 startApolloServer(typeDefs, resolvers);
