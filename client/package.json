@@ -21,10 +21,10 @@
     "@svgr/webpack": "^6.5.1"
   },
   "scripts": {
-    "start": "react-scripts start --openssl-legacy-provider start",
-    "build": "react-scripts build --openssl-legacy-provider build",
-    "test": "react-scripts test --openssl-legacy-provider test",
-    "eject": "react-scripts eject --openssl-legacy-provider eject"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
